@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>💧 Water Quality Prediction</h1>
+        <form action="/predict" method="post">
+            <label>pH:</label><input type="number" step="0.01" name="ph" required><br>
+            <label>Hardness:</label><input type="number" step="0.01" name="Hardness" required><br>
+            <label>Solids:</label><input type="number" step="0.01" name="Solids" required><br>
+            <label>Chloramines:</label><input type="number" step="0.01" name="Chloramines" required><br>
+            <label>Sulfate:</label><input type="number" step="0.01" name="Sulfate" required><br>
+            <label>Conductivity:</label><input type="number" step="0.01" name="Conductivity" required><br>
+            <label>Organic Carbon:</label><input type="number" step="0.01" name="Organic_carbon" required><br>
+            <label>Trihalomethanes:</label><input type="number" step="0.01" name="Trihalomethanes" required><br>
+            <label>Turbidity:</label><input type="number" step="0.01" name="Turbidity" required><br>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
